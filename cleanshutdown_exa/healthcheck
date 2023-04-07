@@ -1,0 +1,10 @@
+silent
+name = healthchecker
+ip = {IP}
+command = dig @127.0.0.1 a.root-servers.net. a +short
+disable = /etc/exabgp/healthcheck_healthchecker.disable
+withdraw-on-down
+interval = 5
+fast-interval = 1
+rise = 5
+fall = 2
